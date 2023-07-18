@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 p {
@@ -11,8 +12,12 @@ header {
   margin: 0;
 }
 
-.navcontainer {
-  padding: 20px;
+.menu-btn {
+  background: none;
+  border-color: rgb(74, 70, 70);
+  padding: 2px 6px;
+  color: white;
+  border-style: solid;
 }
 
 .bgimage {
@@ -37,7 +42,7 @@ header {
   background-image: url(./resources/images/01.jpg);
   aspect-ratio: 1/1;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 60%;
   border-radius: 50%;
   margin: 10px;
   background-size: cover;
@@ -47,7 +52,7 @@ header {
   background-image: url(./resources/images/02.jpg);
   aspect-ratio: 1/1;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 60%;
   border-radius: 50%;
   margin: 10px;
   border-radius: 50%;
@@ -57,7 +62,7 @@ header {
   background-image: url(./resources/images/03.jpg);
   aspect-ratio: 1/1;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 60%;
   border-radius: 50%;
   margin: 10px;
   border-radius: 50%;
@@ -70,7 +75,7 @@ header {
 }
 
 .scriptparagraph {
-  font-size: 10px;
+  font-size: 20px;
   padding: 0 50px 50px 0;
 }
 
@@ -81,70 +86,3 @@ footer {
   font-size: 10px;
   padding: 20px 0;
 }
-
-.footertext {
-  margin: 0;
-}
-
-/* iphone: 481px — 768px */
-@media (min-width:481px) and (max-width:768px)  {
-  .para {
-    padding: 100px;
-  }
-  
-  .d1splay {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  
-  .d2splay {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  
-}
-
-/* tablet:769px — 1024px */
-@media (min-width:769px) and (max-width:1024px)  {
-
-  .para {
-    padding: 150px;
-  }
-  
-  .d1splay {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  
-  .d2splay {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  footer {
-    padding: 25px 0;
-  }
-  
-}
-
-/* desktop: min 1200px */
-@media screen and (min-width:1200px)  {
-
-  .para {
-    padding: 100px;
-  }
-  
-  .d1splay {
-    display: flex;
-  }
-  
-  .d2splay {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  
-  footer {
-    padding: 25px 0;
-  }
-}
-
